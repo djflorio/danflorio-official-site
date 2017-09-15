@@ -1,0 +1,180 @@
+/*
+COLORS
+Main theme: #152e28
+Medium: #a8b5aa
+*/
+
+
+body {
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+}
+
+.header {
+    position: relative;
+    height: 300px;
+    background-color: #152e28;
+    background-image: url("https://www.transparenttextures.com/patterns/cubes.png");
+    text-align: center;
+}
+
+.header__overlay {
+    position: absolute;
+    display: inline-block;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,ffffff+100&1+0,0+100 */
+    background: -moz-radial-gradient(center, ellipse cover, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%); /* FF3.6-15 */
+    background: -webkit-radial-gradient(center, ellipse cover, rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: radial-gradient(ellipse at center, rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#00ffffff',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+    opacity: 0.3;
+    z-index: 1;
+}
+
+.header__name {
+    display: inline-block;
+    position: relative;
+    font-family: 'PT Sans', sans-serif;
+    color: #eee;
+    margin: 0;
+    font-size: 60px;
+    margin-top: 75px;
+    z-index: 0;
+}
+
+.header__tagline {
+    position: relative;
+    font-family: 'PT Sans', sans-serif;
+    font-size: 20px;
+    margin: 0;
+    z-index: 1;
+    opacity: 0.7;
+}
+
+.header__social {
+    list-style: none;
+    padding: 0;
+}
+
+.header__social-icon {
+    position: relative;
+    display: inline-block;
+    margin: 0 5px;
+    z-index: 2;
+}
+
+.header__social-icon-link {
+    text-decoration: none;
+    color: black;
+    opacity: 0.7;
+}
+
+.header__social-icon-link:hover {
+    color: white;
+}
+
+.df-section {
+    padding: 20px;
+}
+
+.df-section--portfolio {
+    background-color: #e6ede7;
+}
+
+.portfolio__item-image {
+    width: 100%;
+}
+
+.portfolio__item-title {
+    display: inline-block;
+    margin: 0;
+}
+
+.portfolio__item-link {
+    color: black;
+}
+
+
+
+
+
+/*  SECTIONS  */
+.section {
+	clear: both;
+	padding: 0px;
+	margin: 0px;
+}
+
+/*  COLUMN SETUP  */
+.col {
+	display: block;
+	float:left;
+	margin: 1% 0 1% 1.6%;
+}
+.col:first-child { margin-left: 0; }
+
+/*  GROUPING  */
+.group:before,
+.group:after { content:""; display:table; }
+.group:after { clear:both;}
+.group { zoom:1; /* For IE 6/7 */ }
+
+/*  GRID OF TWELVE  */
+.span_12_of_12 {
+	width: 100%;
+}
+
+.span_11_of_12 {
+  	width: 91.53%;
+}
+.span_10_of_12 {
+  	width: 83.06%;
+}
+
+.span_9_of_12 {
+  	width: 74.6%;
+}
+
+.span_8_of_12 {
+  	width: 66.13%;
+}
+
+.span_7_of_12 {
+  	width: 57.66%;
+}
+
+.span_6_of_12 {
+  	width: 49.2%;
+}
+
+.span_5_of_12 {
+  	width: 40.73%;
+}
+
+.span_4_of_12 {
+  	width: 32.26%;
+}
+
+.span_3_of_12 {
+  	width: 23.8%;
+}
+
+.span_2_of_12 {
+  	width: 15.33%;
+}
+
+.span_1_of_12 {
+  	width: 6.866%;
+}
+
+/*  GO FULL WIDTH BELOW 480 PIXELS */
+@media only screen and (max-width: 480px) {
+	.col {  margin: 1% 0 1% 0%; }
+    
+    .span_1_of_12, .span_2_of_12, .span_3_of_12, .span_4_of_12, .span_5_of_12, .span_6_of_12, .span_7_of_12, .span_8_of_12, .span_9_of_12, .span_10_of_12, .span_11_of_12, .span_12_of_12 {
+	width: 100%; 
+	}
+}
