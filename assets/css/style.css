@@ -85,8 +85,23 @@ body {
     background-color: #e6ede7;
 }
 
-.portfolio__item-image {
+.portfolio__item {
+    background-color: #fafafa;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.portfolio__image-container {
+    text-align: center;
+}
+
+.portfolio__web-image {
     width: 100%;
+}
+
+.portfolio__phone-image {
+    width: 50%;
+    margin: auto;
 }
 
 .portfolio__item-title {
