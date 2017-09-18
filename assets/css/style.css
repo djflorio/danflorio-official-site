@@ -98,6 +98,24 @@ body {
     color: black;
 }
 
+.experience__header {
+    text-align: center;
+}
+
+.experience__list {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+.experience__list-item {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.experience__list-image {
+    height: 40px;
+}
 
 
 
