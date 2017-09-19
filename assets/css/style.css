@@ -88,27 +88,102 @@ body {
 }
 
 .df-section {
+    position: relative;
     padding: 20px;
 }
 
+.df-section-frame {
+    position: relative;
+    height: 40px;
+    background-color: #252525;
+    background-image: url("https://www.transparenttextures.com/patterns/light-aluminum.png");
+}
+
+.df-section-frame--top {
+    box-shadow: 0px 7px 7px 3px #111;
+}
+
+.df-section-frame--bottom {
+    
+}
+
+.df-section-frame__overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: -moz-linear-gradient(top, rgba(0,0,0,0.65) 0%, rgba(0,0,0,0) 25%, rgba(0,0,0,0) 75%, rgba(0,0,0,0.65) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 25%,rgba(0,0,0,0) 75%,rgba(0,0,0,0.65) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 25%,rgba(0,0,0,0) 75%,rgba(0,0,0,0.65) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', endColorstr='#a6000000',GradientType=0 ); /* IE6-9 */
+}
+
 .df-section--portfolio {
-    background-color: #e6ede7;
+    background-image: url(../img/corkboard.jpg);
+    z-index: -2
 }
 
 .portfolio__item {
-    background-color: #fafafa;
+    position: relative;
+    background-color: #f7f7f7;
     padding: 20px;
     margin-bottom: 20px;
     text-align: center;
 }
 
-.portfolio__web-image {
+.portfolio__item::before,
+.portfolio__item::after {
+    z-index: -1;
+    position: absolute;
+    content: "";
+    bottom: 10px;
+    left: 10px;
+    width: 50%;
+    top: 80%;
+    max-width: 300px;
+    background: #222;
+    box-shadow: 0 15px 10px #222;
+}
+
+.portfolio__item::before {
+    transform: rotate(-3deg);
+    left: 10px;
+    right: auto;
+}
+
+.portfolio__item::after {
+    transform: rotate(3deg);
+    right: 10px;
+    left: auto;
+}
+
+.portfolio__item-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0.9;
+    background-image: url("https://www.transparenttextures.com/patterns/notebook-dark.png");
+}
+
+.portfolio__thumbtack {
+    position: absolute;
+    top: -15px;
+    left: 32%;
+}
+
+.portfolio__image {
+    margin-top: 20px;
+}
+
+.portfolio__image--web {
     width: 100%;
 }
 
-.portfolio__phone-image {
+.portfolio__image--phone {
     width: 50%;
-    margin: auto;
 }
 
 .portfolio__item-title {
@@ -216,7 +291,7 @@ body {
 }
 
 /*  GO FULL WIDTH BELOW 480 PIXELS */
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 600px) {
 	.col {  margin: 1% 0 1% 0%; }
     
     .span_1_of_12, .span_2_of_12, .span_3_of_12, .span_4_of_12, .span_5_of_12, .span_6_of_12, .span_7_of_12, .span_8_of_12, .span_9_of_12, .span_10_of_12, .span_11_of_12, .span_12_of_12 {
