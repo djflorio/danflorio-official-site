@@ -13,9 +13,10 @@ body {
 
 .header {
     position: relative;
-    height: 300px;
+    height: 500px;
     background-color: #152e28;
     background-image: url("https://www.transparenttextures.com/patterns/cubes.png");
+    background-attachment: fixed;
     text-align: center;
 }
 
@@ -42,7 +43,7 @@ body {
     color: #eee;
     margin: 0;
     font-size: 60px;
-    margin-top: 75px;
+    margin-top: 175px;
     z-index: 0;
 }
 
@@ -77,6 +78,15 @@ body {
     color: white;
 }
 
+.main-content {
+    max-width: 1000px;
+}
+
+.df-content-narrow {
+    max-width: 800px;
+    margin: auto;
+}
+
 .df-section {
     padding: 20px;
 }
@@ -89,9 +99,6 @@ body {
     background-color: #fafafa;
     padding: 20px;
     margin-bottom: 20px;
-}
-
-.portfolio__image-container {
     text-align: center;
 }
 
@@ -105,12 +112,16 @@ body {
 }
 
 .portfolio__item-title {
-    display: inline-block;
-    margin: 0;
+    text-align: left;
+    font-size: 20px;
 }
 
 .portfolio__item-link {
     color: black;
+}
+
+.portfolio__item-description {
+    text-align: left;
 }
 
 .experience__header {
