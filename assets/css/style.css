@@ -125,6 +125,50 @@ body {
     z-index: 1;
 }
 
+.post-it {
+    display: inline-block;
+    position: relative;
+    padding: 30px 70px;
+    margin: 20px auto;
+    background-color: #d1db46;
+    background-image: url("https://www.transparenttextures.com/patterns/beige-paper.png");
+    font-size: 40px;
+    color: #353535;
+}
+
+.post-it::before,
+.post-it::after {
+    z-index: -1;
+    position: absolute;
+    content: "";
+    bottom: 10px;
+    left: 10px;
+    width: 50%;
+    top: 80%;
+    max-width: 300px;
+    background: #222;
+    box-shadow: 0 15px 10px #222;
+}
+
+.post-it::before {
+    transform: rotate(-3deg);
+    left: 10px;
+    right: auto;
+}
+
+.post-it::after {
+    transform: rotate(3deg);
+    right: 10px;
+    left: auto;
+}
+
+.post-it__tape {
+    position: absolute;
+    top: -25px;
+    left: 33%;
+    width: 100px;
+}
+
 .portfolio__item {
     position: relative;
     background-color: #f7f7f7;
