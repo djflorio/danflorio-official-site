@@ -43,7 +43,7 @@ body {
     color: #eee;
     margin: 0;
     font-size: 60px;
-    margin-top: 175px;
+    margin-top: 150px;
     z-index: 0;
 }
 
@@ -78,6 +78,18 @@ body {
     color: white;
 }
 
+.header__intro {
+    position: relative;
+    z-index: 1;
+    color: #eee;
+    max-width: 350px;
+    margin: 40px auto;
+}
+
+.header__intro a {
+    color: #eee;
+}
+
 .main-content {
     max-width: 1000px;
 }
@@ -98,10 +110,11 @@ body {
     z-index: 2;
     background-color: #252525;
     background-image: url("https://www.transparenttextures.com/patterns/light-aluminum.png");
+    box-shadow: 0px 7px 7px 3px #111;
 }
 
 .df-section-frame--top {
-    box-shadow: 0px 7px 7px 3px #111;
+    
 }
 
 .df-section-frame--bottom {
@@ -245,14 +258,59 @@ body {
     text-align: left;
 }
 
+.df-section--experience {
+    background-color: #401f06;;
+    background-image: url("https://www.transparenttextures.com/patterns/wood-pattern.png");
+    text-align: center;
+}
+
 .experience__header {
     text-align: center;
+    font-size: 18px;
+    color: black;
 }
 
 .experience__list {
     list-style: none;
+    position: relative;
+    display: inline-block;
+    margin: 20px auto 0 auto;
     padding: 0;
     text-align: center;
+    background-color: #181818;
+    padding: 20px;
+    /*box-shadow: 0px 5px 5px 0px #111;*/
+    background-image: url("../img/metal.png");
+    background-size: 800px;
+    box-shadow: 0 4px 7px black;
+}
+
+.rivet {
+    position: absolute;
+    width: 15px;
+    border-radius: 50%;
+    background-color: grey;
+    box-shadow: 0 4px 7px black;
+}
+
+.rivet--tl {
+    top: 5px;
+    left: 5px;
+}
+
+.rivet--tr {
+    top: 5px;
+    right: 5px;
+}
+
+.rivet--bl {
+    bottom: 5px;
+    left: 5px;
+}
+
+.rivet--br {
+    bottom: 5px;
+    right: 5px;
 }
 
 .experience__list-item {
@@ -264,7 +322,15 @@ body {
     height: 40px;
 }
 
+.df-footer {
+    text-align: center;
+    background-color: #ddd;
+    padding: 30px;
+}
 
+.copyright {
+    font-size: 14px;
+}
 
 
 /*  SECTIONS  */
