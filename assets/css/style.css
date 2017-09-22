@@ -14,9 +14,8 @@ body {
 .header {
     position: relative;
     height: 500px;
-    background-color: #152e28;
-    background-image: url("https://www.transparenttextures.com/patterns/cubes.png");
-    background-attachment: fixed;
+    background-color: #401f06;;
+    background-image: url("https://www.transparenttextures.com/patterns/wood-pattern.png");
     text-align: center;
 }
 
@@ -109,6 +108,7 @@ body {
     height: 40px;
     z-index: 2;
     background-color: #252525;
+    
     background-image: url("https://www.transparenttextures.com/patterns/light-aluminum.png");
     box-shadow: 0px 7px 7px 3px #111;
 }
@@ -134,7 +134,7 @@ body {
 }
 
 .df-section--portfolio {
-    background-image: url(../img/corkboard.jpg);
+    background-image: url(../img/corkboard2.jpg);
     z-index: 1;
 }
 
@@ -150,7 +150,9 @@ body {
 }
 
 .post-it::before,
-.post-it::after {
+.post-it::after,
+.envelope::before,
+.envelope::after {
     z-index: -1;
     position: absolute;
     content: "";
@@ -163,13 +165,15 @@ body {
     box-shadow: 0 15px 10px #222;
 }
 
-.post-it::before {
+.post-it::before,
+.envelope::before {
     transform: rotate(-3deg);
     left: 10px;
     right: auto;
 }
 
-.post-it::after {
+.post-it::after,
+.envelope::after {
     transform: rotate(3deg);
     right: 10px;
     left: auto;
@@ -262,6 +266,7 @@ body {
     background-color: #401f06;;
     background-image: url("https://www.transparenttextures.com/patterns/wood-pattern.png");
     text-align: center;
+    z-index: -1;
 }
 
 .experience__header {
@@ -322,16 +327,63 @@ body {
     height: 40px;
 }
 
+.envelope {
+    position: relative;
+    display: inline-block;
+    margin: 50px 0;
+    background-color: #d9d3b6;
+    background-image: url("https://www.transparenttextures.com/patterns/beige-paper.png");
+}
+
+.envelope__stamp {
+    width: 50px;
+    position: absolute;
+    right: 5px;
+    top: 5px;
+}
+
+.envelope__address {
+    padding: 80px 150px;
+    width: 140px;
+}
+
+.envelope__corner {
+    position: absolute;
+    left: 10px;
+}
+
 .df-footer {
+    position: relative;
     text-align: center;
-    background-color: #ddd;
-    padding: 30px;
+    background-color: #331e03;
+    background-image: url("../img/dark-wood-rotated.png");
+    background-attachment: fixed;
+    height: 90px;
+    border-top: solid 1px #160d00;
+}
+
+.df-footer-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+        /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+1,ffffff+100&1+0,0+100 */
+    background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(255,255,255,0.99) 1%, rgba(255,255,255,0) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%,rgba(255,255,255,0.99) 1%,rgba(255,255,255,0) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(255,255,255,1) 0%,rgba(255,255,255,0.99) 1%,rgba(255,255,255,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#00ffffff',GradientType=0 ); /* IE6-9 */
+    opacity: 0.1;
 }
 
 .copyright {
+    position: absolute;
+    margin: 0;
+    width: 100%;
     font-size: 14px;
+    color: #cdcdcd;
+    bottom: 35px;
 }
-
 
 /*  SECTIONS  */
 .section {
