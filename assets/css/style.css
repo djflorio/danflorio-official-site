@@ -357,7 +357,6 @@ body {
     text-align: center;
     background-color: #331e03;
     background-image: url("../img/dark-wood-rotated.png");
-    background-attachment: fixed;
     height: 90px;
     border-top: solid 1px #160d00;
 }
